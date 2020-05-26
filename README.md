@@ -43,9 +43,9 @@ Click [here](https://trello.com/b/UIehvT2h/growpath) for Trello Board
 ## App Resources
 
 
-|User Resource
+|User Resource|
 |---------------------------------------------|
-|User has many plants (User ID as foreign key)|
+|**User has many plants (User ID as foreign key)**|
 |username: String|
 |email: String|
 |garden_type: String|
@@ -53,74 +53,74 @@ Click [here](https://trello.com/b/UIehvT2h/growpath) for Trello Board
 |notification: Boolean|
 
 
-Plant Resource
-
-Plant has many Entries
-Plant has one Harvest
-plant_name: String
-plant_type: String
-flowering: Boolean
-state_of_growth: String
-grow_medium: String
-clone: Boolean
-planted: Date
-seed_supplier: String
-plant_height: Float
-plant_width: Float
-
-
-Entry Resource
-*There are four entry types. Watering, feeding, defoliate, and general check-up.*
-
-*All entry types will have the following required attributes:*
-
-entry_type: String
-adhoc_notes: Text
-growth_phase: String
-overall_health: Text
+|Plant Resource|
+|----------------------|
+|Plant has many Entries|
+|Plant has one Harvest|
+|plant_name: String|
+|plant_type: String|
+|flowering: Boolean|
+|state_of_growth: String|
+|grow_medium: String|
+|clone: Boolean|
+|planted: Date|
+|seed_supplier: String|
+|plant_height: Float|
+|plant_width: Float|
 
 
-
-
-Watering Entry:
-
-water_ph: Float
-water_volume: Float
-ppm: Number
-runoff_amount: Float
-runoff_ph: Float
+|Entry Resource|
+|-----------------------------------------------------------------------------------|
+|**There are four entry types. Watering, feeding, defoliate, and general check-up.**|
+|-----------------------------------------------------------------------------------|
+|*All entry types will have the following required attributes:*|
+|entry_type: String|
+|adhoc_notes: Text|
+|growth_phase: String|
+|overall_health: Text|
 
 
 
-Feeding Entry:
 
-water_ph: Float
-water_volume: Float
-ppm: Number
-runoff_amount: Float
-runoff_ph: Float
-fertilizer_used: String
-
-
-
-Defoliate
-
-leaves_removed: Boolean
-flowers_removed: Boolean
-leaf_health: String
-flower_health: String
-pests: Boolean
+|**Watering Entry:**|
+|--------------------|
+|water_ph: Float|
+|water_volume: Float|
+|ppm: Number|
+|runoff_amount: Float|
+|runoff_ph: Float|
 
 
-General Check-Up:
 
-Only required attributes
+|**Feeding Entry:**|
+|----------------------|
+|water_ph: Float|
+|water_volume: Float|
+|ppm: Number|
+|runoff_amount: Float|
+|runoff_ph: Float|
+|fertilizer_used: String|
 
 
-Harvest Resource
 
-harvest_type: String
-total_yield: Float
+|**Defoliate**|
+|
+|leaves_removed: Boolean|
+|flowers_removed: Boolean|
+|leaf_health: String|
+|flower_health: String|
+|pests: Boolean|
+
+
+|**General Check-Up:**|
+|
+|Only required attributes|
+
+
+|**Harvest Resource**|
+|--------------------|
+|harvest_type: String|
+|total_yield: Float|
 
 
 ## API
