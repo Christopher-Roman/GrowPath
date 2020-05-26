@@ -54,7 +54,7 @@ Click [here](https://trello.com/b/UIehvT2h/growpath) for Trello Board
 
 
 |Plant Resource|
-|----------------------|
+|---------------------------------------------|
 |Plant has many Entries|
 |Plant has one Harvest|
 |plant_name: String|
@@ -70,9 +70,10 @@ Click [here](https://trello.com/b/UIehvT2h/growpath) for Trello Board
 
 
 |Entry Resource|
-|-----------------------------------------------------------------------------------|
-|**There are four entry types. Watering, feeding, defoliate, and general check-up.**|
-|*All entry types will have the following required attributes:*|
+|---------------------------------------------|
+|**There are four entry types:**| 
+|**Watering, feeding, defoliate, and general.**|
+|*All entry have required attributes:*|
 |entry_type: String|
 |adhoc_notes: Text|
 |growth_phase: String|
@@ -82,7 +83,7 @@ Click [here](https://trello.com/b/UIehvT2h/growpath) for Trello Board
 
 
 |**Watering Entry:**|
-|--------------------|
+|---------------------------------------------|
 |water_ph: Float|
 |water_volume: Float|
 |ppm: Number|
@@ -92,7 +93,7 @@ Click [here](https://trello.com/b/UIehvT2h/growpath) for Trello Board
 
 
 |**Feeding Entry:**|
-|----------------------|
+|---------------------------------------------|
 |water_ph: Float|
 |water_volume: Float|
 |ppm: Number|
@@ -103,7 +104,7 @@ Click [here](https://trello.com/b/UIehvT2h/growpath) for Trello Board
 
 
 |**Defoliate**|
-|
+|---------------------------------------------|
 |leaves_removed: Boolean|
 |flowers_removed: Boolean|
 |leaf_health: String|
@@ -112,12 +113,12 @@ Click [here](https://trello.com/b/UIehvT2h/growpath) for Trello Board
 
 
 |**General Check-Up:**|
-|
+|---------------------------------------------|
 |Only required attributes|
 
 
 |**Harvest Resource**|
-|--------------------|
+|---------------------------------------------|
 |harvest_type: String|
 |total_yield: Float|
 
