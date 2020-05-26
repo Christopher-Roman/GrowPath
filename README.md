@@ -14,7 +14,7 @@ Click [here](https://trello.com/b/UIehvT2h/growpath) for Trello Board
 
 ## User Story
 ### MVP Functionality:
----
+
 - Users will be able to add plants to track
 - Users will be able choose what type of entry they are making for a specific plant (i.e. feeding, watering, defoil, etc).
 - Users will be able to list all entries for a single plant in their garden and sort based on entry type.
@@ -23,13 +23,13 @@ Click [here](https://trello.com/b/UIehvT2h/growpath) for Trello Board
 - Users will be able to use the app to find information about their plants using API calls
 
 ### Post-MVP Functionality:
----
+
 - Users will be able to utilize other accounts to log in utilizing oAuth
 - Users will be able to set reminder  email/calendar/notifications to care for their plants
 - Users will be able to export plant data to Excel spreadsheets
 
 ### Future Commercial Use Functionality:
----
+
 - Machine learning to offer suggestions based on data entries
 - Camera integration and photo recognition to find and treat unhealthy plants or pests
 - Smart devices to control grow environment (i.e. temperature, RH, pH levels, etc)
@@ -41,101 +41,87 @@ Click [here](https://trello.com/b/UIehvT2h/growpath) for Trello Board
 - React Native
 
 ## App Resources
-### User Resource
----
-<dl>
-  <dt>User has many plants (User ID as foreign key)</dt>
-	<dd>username: String</dd>
-	<dd>email: String</dd>
-	<dd>garden_type: String</dd>
-	<dd>experience_level: String</dd>
-	<dd>notification: Boolean</dd>
-</dl>
-
-### Plant Resource
----
-<dl>
-	<dt>Plant has many Entries</dt>
-	<dt>Plant has one Harvest</dt>
-	<dd>plant_name: String</dd>
-	<dd>plant_type: String</dd>
-	<dd>flowering: Boolean</dd>
-	<dd>state_of_growth: String</dd>
-	<dd>grow_medium: String</dd>
-	<dd>clone: Boolean</dd>
-	<dd>planted: Date</dd>
-	<dd>seed_supplier: String</dd>
-	<dd>plant_height: Float</dd>
-	<dd>plant_width: Float</dd>
-</dl>
-
-### Entry Resource
----
-**There are four entry types. Watering, feeding, defoliate, and general check-up.**
-
-**All entry types will have the following required attributes:**
-<dl>
-	<dd>entry_type: String</dd>
-	<dd>adhoc_notes: Text</dd>
-	<dd>growth_phase: String</dd>
-	<dd>overall_health: Text</dd>
-</dl>
 
 
-<dl>
-	<dt>Watering Entry:</dt>
+|User Resource
+|---------------------------------------------|
+|User has many plants (User ID as foreign key)|
+|username: String|
+|email: String|
+|garden_type: String|
+|experience_level: String|
+|notification: Boolean|
 
----
-	<dd>water_ph: Float</dd>
-	<dd>water_volume: Float</dd>
-	<dd>ppm: Number</dd>
-	<dd>runoff_amount: Float</dd>
-	<dd>runoff_ph: Float</dd>
-</dl>
 
-<dl>
-	<dt>Feeding Entry:</dt>
-</dl>
+Plant Resource
 
----
-<dl>
-	<dd>water_ph: Float</dd>
-	<dd>water_volume: Float</dd>
-	<dd>ppm: Number</dd>
-	<dd>runoff_amount: Float</dd>
-	<dd>runoff_ph: Float</dd>
-	<dd>fertilizer_used: String</dd>
-</dl>
+Plant has many Entries
+Plant has one Harvest
+plant_name: String
+plant_type: String
+flowering: Boolean
+state_of_growth: String
+grow_medium: String
+clone: Boolean
+planted: Date
+seed_supplier: String
+plant_height: Float
+plant_width: Float
 
-<dl>
-	<dt>Defoliate</dt>
-</dl>
 
----
-<dl>
-	<dd>leaves_removed: Boolean</dd>
-	<dd>flowers_removed: Boolean</dd>
-	<dd>leaf_health: String</dd>
-	<dd>flower_health: String</dd>
-	<dd>pests: Boolean</dd>
-</dl>
+Entry Resource
+*There are four entry types. Watering, feeding, defoliate, and general check-up.*
 
-<dl>
-	<dt>General Check-Up:</dt>
-</dl>
+*All entry types will have the following required attributes:*
 
----
+entry_type: String
+adhoc_notes: Text
+growth_phase: String
+overall_health: Text
 
-<dl>
-	<dd>Only required attributes
-</dl>
 
-### Harvest Resource
----
-<dl>
-	<dd>harvest_type: String</dd>
-	<dd>total_yield: Float</dd>
-</dl>
+
+
+Watering Entry:
+
+water_ph: Float
+water_volume: Float
+ppm: Number
+runoff_amount: Float
+runoff_ph: Float
+
+
+
+Feeding Entry:
+
+water_ph: Float
+water_volume: Float
+ppm: Number
+runoff_amount: Float
+runoff_ph: Float
+fertilizer_used: String
+
+
+
+Defoliate
+
+leaves_removed: Boolean
+flowers_removed: Boolean
+leaf_health: String
+flower_health: String
+pests: Boolean
+
+
+General Check-Up:
+
+Only required attributes
+
+
+Harvest Resource
+
+harvest_type: String
+total_yield: Float
+
 
 ## API
 [Trefle Plant API](https://trefle.io/)
