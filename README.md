@@ -72,7 +72,6 @@ Click [here](https://trello.com/b/UIehvT2h/growpath) for Trello Board
 |Entry Resource|
 |-----------------------------------------------------------------------------------|
 |**There are four entry types. Watering, feeding, defoliate, and general check-up.**|
-|-----------------------------------------------------------------------------------|
 |*All entry types will have the following required attributes:*|
 |entry_type: String|
 |adhoc_notes: Text|
