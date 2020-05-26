@@ -70,8 +70,7 @@ Click [here](https://trello.com/b/UIehvT2h/growpath) for Trello Board
 
 |Entry Resource|
 |---------------------------------------------|
-|**There are four entry types:**|
-|*Required fields:*|
+|**Required Entry Fields:**|
 |entry_type: String|
 |adhoc_notes: Text|
 |growth_phase: String|
