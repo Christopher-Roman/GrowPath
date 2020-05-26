@@ -1,6 +1,6 @@
 # GrowPath
 
-### Description
+### Description 
 
 Gardening is a lot of fun. It is a great hobby that offers people an opportunity to nurture a living organism and watch it grow without all of the commitment of a pet. Gardeners are also able to directly impact the way their plant grows through training, feeding, environment and so much more. But, how do you remember everything you’ve done over the course of a month, or three months, or a year? What if something you did impacted the plant in a miraculously amazing way? Or, what if it had a negative impact? You could just write it down on a white board or start a note on your phone. Maybe put a post-it somewhere? But, what happens when you need it? Did you remember to put the date on it? Which plant was that post-it about? GrowPath will timestampe entries to specific plants. Efficiently and effectively create data points for each of your plants to bring your gardening game to the next level!
 
@@ -20,31 +20,31 @@ Click [here](https://trello.com/b/UIehvT2h/growpath) for Trello Board
 
 #### MVP Functionality:
 
--Users will be able to add plants to track
--Users will be able choose what type of entry they are making for a specific plant (i.e. feeding, watering, defoil, etc).
--Users will be able to list all entries for a single plant in their garden and sort based on entry type.
--Users will have full CRUD on all entries and plants added to their profile.
--Users will be able to attach pictures to their entries.
--Users will be able to use the app to find information about their plants using API calls
+- Users will be able to add plants to track
+- Users will be able choose what type of entry they are making for a specific plant (i.e. feeding, watering, defoil, etc).
+- Users will be able to list all entries for a single plant in their garden and sort based on entry type.
+- Users will have full CRUD on all entries and plants added to their profile.
+- Users will be able to attach pictures to their entries.
+- Users will be able to use the app to find information about their plants using API calls
 
 #### Post-MVP Functionality:
 
--Users will be able to utilize other accounts to log in utilizing oAuth
--Users will be able to set reminder  email/calendar/notifications to care for their plants
--Users will be able to export plant data to Excel spreadsheets
+- Users will be able to utilize other accounts to log in utilizing oAuth
+- Users will be able to set reminder  email/calendar/notifications to care for their plants
+- Users will be able to export plant data to Excel spreadsheets
 
 #### Future Commercial Use Functionality:
 
--Machine learning to offer suggestions based on data entries
--Camera integration and photo recognition to find and treat unhealthy plants or pests
--Smart devices to control grow environment (i.e. temperature, RH, pH levels, etc)
--Smart irrigation dashboard
+- Machine learning to offer suggestions based on data entries
+- Camera integration and photo recognition to find and treat unhealthy plants or pests
+- Smart devices to control grow environment (i.e. temperature, RH, pH levels, etc)
+- Smart irrigation dashboard
 
 ### App Tech
 
--Ruby on Rails
--PostgreSQL
--React Native
+- uby on Rails
+- PostgreSQL
+- React Native
 
 ### App Resources
 
