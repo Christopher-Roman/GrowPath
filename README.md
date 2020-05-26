@@ -45,7 +45,7 @@ Click [here](https://trello.com/b/UIehvT2h/growpath) for Trello Board
 
 |User Resource|
 |---------------------------------------------|
-|**User has many plants (User ID as foreign key)**|
+|**User has many plants**|
 |username: String|
 |email: String|
 |garden_type: String|
@@ -55,8 +55,8 @@ Click [here](https://trello.com/b/UIehvT2h/growpath) for Trello Board
 
 |Plant Resource|
 |---------------------------------------------|
-|Plant has many Entries|
-|Plant has one Harvest|
+|**Plant has many Entries**|
+|**Plant has one Harvest**|
 |plant_name: String|
 |plant_type: String|
 |flowering: Boolean|
@@ -68,12 +68,10 @@ Click [here](https://trello.com/b/UIehvT2h/growpath) for Trello Board
 |plant_height: Float|
 |plant_width: Float|
 
-
 |Entry Resource|
 |---------------------------------------------|
-|**There are four entry types:**| 
-|**Watering, feeding, defoliate, and general.**|
-|*All entry have required attributes:*|
+|**There are four entry types:**|
+|*Required fields:*|
 |entry_type: String|
 |adhoc_notes: Text|
 |growth_phase: String|
@@ -82,7 +80,7 @@ Click [here](https://trello.com/b/UIehvT2h/growpath) for Trello Board
 
 
 
-|**Watering Entry:**|
+|**Watering Entry Added Fields:**|
 |---------------------------------------------|
 |water_ph: Float|
 |water_volume: Float|
@@ -92,7 +90,7 @@ Click [here](https://trello.com/b/UIehvT2h/growpath) for Trello Board
 
 
 
-|**Feeding Entry:**|
+|**Feeding Entry Added Fields:**|
 |---------------------------------------------|
 |water_ph: Float|
 |water_volume: Float|
@@ -103,7 +101,7 @@ Click [here](https://trello.com/b/UIehvT2h/growpath) for Trello Board
 
 
 
-|**Defoliate**|
+|**Defoliate Entry Added Fields**|
 |---------------------------------------------|
 |leaves_removed: Boolean|
 |flowers_removed: Boolean|
@@ -112,7 +110,7 @@ Click [here](https://trello.com/b/UIehvT2h/growpath) for Trello Board
 |pests: Boolean|
 
 
-|**General Check-Up:**|
+|**General Entry Fields:**|
 |---------------------------------------------|
 |Only required attributes|
 
