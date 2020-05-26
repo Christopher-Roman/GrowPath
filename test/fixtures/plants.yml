@@ -1,0 +1,25 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  plant_name: MyString
+  plant_type: MyString
+  flowering: false
+  state_of_growth: MyString
+  grow_medium: MyString
+  clone: false
+  planted: 2020-05-26
+  seed_supplier: MyString
+  plant_height: 1.5
+  plant_width: 1.5
+
+two:
+  plant_name: MyString
+  plant_type: MyString
+  flowering: false
+  state_of_growth: MyString
+  grow_medium: MyString
+  clone: false
+  planted: 2020-05-26
+  seed_supplier: MyString
+  plant_height: 1.5
+  plant_width: 1.5
