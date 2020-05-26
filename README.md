@@ -20,32 +20,31 @@ Click [here](https://trello.com/b/UIehvT2h/growpath) for Trello Board
 
 #### MVP Functionality:
 
-*Users will be able to register and create an account to utilize the site
-*Users will be able to add plants to track
-*Users will be able choose what type of entry they are making for a specific plant (i.e. feeding, watering, defoil, etc).
-*Users will be able to list all entries for a single plant in their garden and sort based on entry type.
-*Users will have full CRUD on all entries and plants added to their profile.
-*Users will be able to attach pictures to their entries.
-*Users will be able to use the app to find information about their plants using API calls
+-Users will be able to add plants to track
+-Users will be able choose what type of entry they are making for a specific plant (i.e. feeding, watering, defoil, etc).
+-Users will be able to list all entries for a single plant in their garden and sort based on entry type.
+-Users will have full CRUD on all entries and plants added to their profile.
+-Users will be able to attach pictures to their entries.
+-Users will be able to use the app to find information about their plants using API calls
 
 #### Post-MVP Functionality:
 
-*Users will be able to utilize other accounts to log in utilizing oAuth
-*Users will be able to set reminder  email/calendar/notifications to care for their plants
-*Users will be able to export plant data to Excel spreadsheets
+-Users will be able to utilize other accounts to log in utilizing oAuth
+-Users will be able to set reminder  email/calendar/notifications to care for their plants
+-Users will be able to export plant data to Excel spreadsheets
 
 #### Future Commercial Use Functionality:
 
-*Machine learning to offer suggestions based on data entries
-*Camera integration and photo recognition to find and treat unhealthy plants or pests
-*Smart devices to control grow environment (i.e. temperature, RH, pH levels, etc)
-*Smart irrigation dashboard
+-Machine learning to offer suggestions based on data entries
+-Camera integration and photo recognition to find and treat unhealthy plants or pests
+-Smart devices to control grow environment (i.e. temperature, RH, pH levels, etc)
+-Smart irrigation dashboard
 
 ### App Tech
 
-*Ruby on Rails
-*PostgreSQL
-*React Native
+-Ruby on Rails
+-PostgreSQL
+-React Native
 
 ### App Resources
 
