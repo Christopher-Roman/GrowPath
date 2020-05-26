@@ -21,7 +21,7 @@ Click [here](https://trello.com/b/UIehvT2h/growpath) for Trello Board
 #### MVP Functionality:
 
 *Users will be able to register and create an account to utilize the site*
-*Users will be able to add plants to track**
+*Users will be able to add plants to track*
 *Users will be able choose what type of entry they are making for a specific plant (i.e. feeding, watering, defoil, etc).*
 *Users will be able to list all entries for a single plant in their garden and sort based on entry type.*
 *Users will have full CRUD on all entries and plants added to their profile.*
