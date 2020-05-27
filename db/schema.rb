@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_26_163418) do
+ActiveRecord::Schema.define(version: 2020_05_27_145327) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -35,6 +35,8 @@ ActiveRecord::Schema.define(version: 2020_05_26_163418) do
     t.boolean "pests"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "plant_id"
+    t.index ["plant_id"], name: "index_entries_on_plant_id"
   end
 
   create_table "harvests", force: :cascade do |t|
@@ -42,6 +44,8 @@ ActiveRecord::Schema.define(version: 2020_05_26_163418) do
     t.float "total_yield"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "plant_id"
+    t.index ["plant_id"], name: "index_harvests_on_plant_id"
   end
 
   create_table "plants", force: :cascade do |t|
@@ -57,6 +61,8 @@ ActiveRecord::Schema.define(version: 2020_05_26_163418) do
     t.float "plant_width"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "user_id"
+    t.index ["user_id"], name: "index_plants_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
