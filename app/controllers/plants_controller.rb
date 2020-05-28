@@ -1,7 +1,7 @@
 class PlantsController < ApplicationController
 
   def index
-    plants = Plant.where(:user_id === current_user[:id])
+    plants = Plant.where(user_id: current_user[:id])
     render json: {status: 'Success!', message: 'Loaded all Plants', data:plants}, status: :ok
   end
 
@@ -46,4 +46,5 @@ class PlantsController < ApplicationController
   				  :plant_width
   				  )
   end
+
 end
