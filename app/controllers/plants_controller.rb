@@ -2,7 +2,11 @@ class PlantsController < ApplicationController
 
   def index
     plants = Plant.where(user_id: current_user[:id])
-    render json: {status: 'Success!', message: 'Loaded all Plants', data:plants}, status: :ok
+    if(plants.lenth > 0)
+      render json: {status: 'Success!', message: 'Loaded all Plants', data:plants}, status: :ok
+    else
+      render json: {status: 'Hmm', message: 'Your garden... it is barren...', data: plants.errors}, status: :unprocessable_entity
+    end
   end
 
   def show
@@ -24,7 +28,7 @@ class PlantsController < ApplicationController
     if plant.destroy
       render json: {status: 'Success!', message: 'You have successfully pruned that plant from your garden', data:plant}
     else
-      render json: {status: 'Success!', message: 'Your plant refused to leave... see errors.' data: plant.errors}, status: :unprocessable_entity
+      render json: {status: 'Success!', message: 'Your plant refused to leave... see errors.', data: plant.errors}, status: :unprocessable_entity
     end
   end
 
@@ -33,7 +37,7 @@ class PlantsController < ApplicationController
     if plant.update_attributes(plant_params)
       render json: {status: 'Success!', message: 'You have successfully updated that plant', data:plant}
     else
-      render json: {status: 'Success!', message: 'Something went wrong. See error messaging.' data: plant.errors}, status: :unprocessable_entity
+      render json: {status: 'Success!', message: 'Something went wrong. See error messaging.', data: plant.errors}, status: :unprocessable_entity
 
     end
   end

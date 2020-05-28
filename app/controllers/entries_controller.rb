@@ -24,7 +24,7 @@ class EntriesController < ApplicationController
     if entry.destroy
       render json: {status: 'Success!', message: 'Entry was successfully deleted.', data:entry}
     else
-      render json: {status: 'Error!', message: 'Your entry refused to leave... see errors.' data: entry.errors}, status: :unprocessable_entity
+      render json: {status: 'Error!', message: 'Your entry refused to leave... see errors.', data: entry.errors}, status: :unprocessable_entity
     end
   end
 
@@ -33,7 +33,7 @@ class EntriesController < ApplicationController
     if entry.update_attributes(entry_params)
       render json: {status: 'Success!', message: 'You have successfully updated that entry', data:entry}
     else
-      render json: {status: 'Error!', message: 'Something went wrong. See error messaging.' data: entry.errors}, status: :unprocessable_entity
+      render json: {status: 'Error!', message: 'Something went wrong. See error messaging.', data: entry.errors}, status: :unprocessable_entity
 
     end
   end

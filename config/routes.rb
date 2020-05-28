@@ -9,6 +9,6 @@ Rails.application.routes.draw do
     resources :entries, only: [:create, :index, :show, :destroy, :edit]
     resources :harvests, only: [:create, :index, :show, :destroy, :edit]
 
-    get  'entries/:query', to: 'entries#entry_type_search', as:'entry_type_search'
+    get 'entries/:query', to: 'entries#entry_type_search', as:'entry_type_search'
   end
 end
